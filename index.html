@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenLint</title>
+<meta name="description" content="OpenLint is an open specification and toolbox for linting API artifacts — a community fork of Spectral, stewarded in the open.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfdfc;
+    --ink: #1a1a18;
+    --muted: #5f5f5a;
+    --accent: #0b6e4f;
+    --rule: #e4e4df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131312;
+      --ink: #ecece7;
+      --muted: #a3a39c;
+      --accent: #4cc294;
+      --rule: #2c2c29;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 9vh 0 6vh; }
+  .mark {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 15px;
+    color: var(--accent);
+    letter-spacing: .02em;
+  }
+  h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.1; margin: .4rem 0 1.4rem; letter-spacing: -.02em; }
+  p { margin: 0 0 1.2rem; }
+  .lede { font-size: 1.15rem; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.4rem 0; }
+  ul.links { list-style: none; padding: 0; margin: 0 0 1.2rem; }
+  ul.links li { padding: .35rem 0; }
+  ul.links li::before { content: "▸ "; color: var(--accent); }
+  footer { font-size: .85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">$ openlint --version<br>0.0.0-hello-world</div>
+  <h1>OpenLint</h1>
+
+  <p class="lede">An open specification and toolbox for linting API artifacts — rulesets, conformance, and governance for OpenAPI and the formats around it. A community fork of Spectral, developed and stewarded in the open.</p>
+
+  <p>The name was chosen by <a href="https://github.com/api-commons/spotlight-spec/issues/39">open community vote</a>, concluding September&nbsp;2026. The effort names three things that no longer have to share a fate with any one company: a <strong>specification</strong> a ruleset can conform to, the <strong>tooling</strong> that applies it — a linter as a library, a CLI, a CI gate, an IDE integration — and the <strong>community</strong> that carries both.</p>
+
+  <p>This page is deliberately a hello world. The work is just beginning: the roadmap is being drafted now, and everything — the spec, the tools, the governance — will happen in public on <a href="https://github.com/openlint">GitHub</a>.</p>
+
+  <hr>
+
+  <ul class="links">
+    <li><a href="https://github.com/openlint">github.com/openlint</a> — the organization</li>
+    <li><a href="https://github.com/api-commons/spotlight-spec">The working spec</a> — moving here soon</li>
+    <li><a href="https://github.com/api-commons/spotlight-spec/issues/39">The naming vote</a> · <a href="https://github.com/api-commons/spotlight-spec/issues/45">the name's due diligence</a></li>
+  </ul>
+
+  <footer>
+    <p>An <a href="https://apicommons.org">API Commons</a> effort · est. September 2026</p>
+  </footer>
+</main>
+</body>
+</html>
