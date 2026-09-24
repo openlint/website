@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog
+crumbs:
+  - name: blog
+    url: /blog/
+---
+<h1>Blog</h1>
+<p class="lede">News and stories from the OpenLint community.</p>
+<ul class="entries">
+{% for post in site.posts %}
+  <li><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span><br><a href="{{ post.url }}">{{ post.title }}</a><p class="muted">{{ post.summary | default: post.excerpt | markdownify | strip_html | truncatewords: 40 }}</p></li>
+{% endfor %}
+</ul>
