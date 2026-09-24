@@ -1,0 +1,21 @@
+---
+layout: default
+title: Meetings
+crumbs:
+  - name: meetings
+    url: /meetings/
+---
+<h1>Meetings</h1>
+<p class="lede">OpenLint is worked on in the open. Every meeting is recorded, transcribed and posted here, with the video, a summary and the full transcript.</p>
+
+{% for t in site.meeting_types %}
+{% assign key = t[0] %}{% assign type = t[1] %}
+{% assign entries = site.meetings | where: "type", key | sort: "date" | reverse %}
+<h2><a href="/meetings/{{ key }}/">{{ type.name }}</a></h2>
+<p>{{ type.summary }}</p>
+<ul class="entries">
+{% for m in entries limit: 5 %}
+  <li><span class="date">{{ m.date | date: "%Y-%m-%d" }}</span><br><a href="{{ m.url }}">{{ m.title }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
