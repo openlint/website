@@ -44,3 +44,5 @@ ul.entries p { margin: .3rem 0 0; }
 .transcript .ts { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; text-decoration: none; margin-right: .4rem; }
 .transcript .who { font-weight: 600; }
 footer { font-size: .85rem; color: var(--muted); margin-top: 3rem; }
+img.hero { display: block; width: 100%; height: auto; border-radius: 14px; margin: 0 0 1.8rem; }
+.post h2 { margin-top: 2rem; }
