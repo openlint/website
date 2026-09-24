@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.summary | default: site.description | markdownify | strip_html | strip_newlines | escape }}">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<main>
+  <nav class="crumbs"><a href="/">openlint</a>{% for c in page.crumbs %} / <a href="{{ c.url }}">{{ c.name }}</a>{% endfor %}</nav>
+  {{ content }}
+  <footer>
+    <p>An <a href="https://apicommons.org">API Commons</a> effort · <a href="https://github.com/openlint">github.com/openlint</a> · <a href="mailto:info@openlint.org">info@openlint.org</a></p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+title: OpenLint
+description: An open specification and toolbox for linting API artifacts — a community fork of Spectral, stewarded in the open.
+url: https://openlint.org
+
+collections:
+  meetings:
+    output: true
+    permalink: /meetings/:path/
+
+meeting_types:
+  office-hours:
+    name: Office Hours
+    summary: A weekly open call where anyone can bring questions, proposals and objections about the specification, the toolbox and how the project is run.
+
+exclude:
+  - README.md
+  - CNAME

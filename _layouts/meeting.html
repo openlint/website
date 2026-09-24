@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign type = site.meeting_types[page.type] %}
+<p class="muted">{{ type.name }} · {{ page.date | date: "%-d %B %Y" }}</p>
+<h1>{{ page.title }}</h1>
+
+{% if page.youtube_id %}
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}" title="{{ page.title | escape }}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+{% endif %}
+
+<h2>Summary</h2>
+{{ page.summary | markdownify }}
+
+{% if page.agenda_url or page.youtube_id %}
+<p class="muted">{% if page.agenda_url %}<a href="{{ page.agenda_url }}">Agenda and discussion on GitHub</a>{% endif %}{% if page.agenda_url and page.youtube_id %} · {% endif %}{% if page.youtube_id %}<a href="https://www.youtube.com/watch?v={{ page.youtube_id }}">Watch on YouTube</a>{% endif %}</p>
+{% endif %}
+
+<h2>Transcript</h2>
+<div class="transcript">
+{{ content }}
+</div>

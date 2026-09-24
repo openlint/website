@@ -1,0 +1,20 @@
+---
+layout: default
+title: Office Hours
+crumbs:
+  - name: meetings
+    url: /meetings/
+  - name: office-hours
+    url: /meetings/office-hours/
+---
+{% assign type = site.meeting_types["office-hours"] %}
+<h1>{{ type.name }}</h1>
+<p class="lede">{{ type.summary }}</p>
+<p>Agendas are posted as issues in <a href="https://github.com/openlint/community/issues">openlint/community</a>, and anyone can add to them.</p>
+
+{% assign entries = site.meetings | where: "type", "office-hours" | sort: "date" | reverse %}
+<ul class="entries">
+{% for m in entries %}
+  <li><span class="date">{{ m.date | date: "%Y-%m-%d" }}</span><br><a href="{{ m.url }}">{{ m.title }}</a><p class="muted">{{ m.summary | markdownify | strip_html | truncatewords: 40 }}</p></li>
+{% endfor %}
+</ul>
