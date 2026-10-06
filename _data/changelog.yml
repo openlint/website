@@ -1,0 +1,54 @@
+# One entry per office hours: what changed since the previous one. Newest first.
+- title: "Office Hours #2"
+  date: 2026-10-08
+  agenda: https://github.com/openlint/community/issues/26
+  done:
+    - text: "Office Hours #1 recording, summary and transcript published"
+      url: https://openlint.org/meetings/office-hours/2026-09-24/
+    - text: Blog added, with a post on the first office hours
+      url: https://openlint.org/blog/
+    - text: Code of Conduct published for every OpenLint repo
+      url: https://github.com/openlint/.github/blob/main/CODE_OF_CONDUCT.md
+    - text: "openlint/openlint created with Spectral's full history (4 Oct)"
+      url: https://github.com/openlint/openlint
+    - text: "openlint/spec created for the specification (6 Oct)"
+      url: https://github.com/openlint/spec
+    - text: Open Collective created and applied to Open Source Europe as fiscal host
+      url: https://opencollective.com/openlint
+  in_progress:
+    - text: Rename to OpenLint and remove telemetry
+      url: https://github.com/openlint/openlint/pull/1
+    - text: Specification, JSON Schema and README
+      url: https://github.com/openlint/spec/pull/2
+    - text: Governance proposal
+      url: https://github.com/openlint/community/pull/17
+    - text: Maintainers page
+      url: https://github.com/openlint/community/pull/21
+    - text: Specification page
+      url: https://github.com/openlint/website/pull/7
+    - text: Learn section with OpenLint 101
+      url: https://github.com/openlint/website/pull/12
+  discussions:
+    - { number: 2, title: Aliases }
+    - { number: 5, title: Document types }
+    - { number: 6, title: Clean up vendorisms }
+    - { number: 7, title: Rules testing }
+    - { number: 9, title: VS Code extension }
+    - { number: 11, title: Rules builder }
+    - { number: 12, title: Backwards compatibility }
+    - { number: 13, title: Formalizing the specification }
+    - { number: 16, title: Governance }
+    - { number: 19, title: Maintainers }
+    - { number: 22, title: Open Source Europe }
+    - { number: 24, title: Website }
+    - { number: 25, title: Education }
+- title: "Office Hours #1"
+  date: 2026-09-24
+  agenda: https://github.com/openlint/community/issues/1
+  done:
+    - text: The project took the name OpenLint by community vote
+      url: https://github.com/api-commons/spotlight-spec/issues/39
+    - text: "openlint.org, the GitHub organization, the community repo and info@openlint.org set up"
+      url: https://github.com/openlint
+    - text: "First office hours: the roadmap in three areas, Specification, Toolbox and Administration"
+      url: https://openlint.org/meetings/office-hours/2026-09-24/

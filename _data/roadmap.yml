@@ -1,0 +1,108 @@
+# The OpenLint roadmap, derived from each week's office hours agenda.
+# status: done | in-progress | discussion | unclaimed
+as_of: 2026-10-08
+source: https://github.com/openlint/community/issues/26
+areas:
+  - name: Specification
+    summary: The ruleset format, its normative text, and conformance.
+    items:
+      - name: Formal Specification
+        status: in-progress
+        links:
+          - { label: "spec#2", url: "https://github.com/openlint/spec/pull/2" }
+          - { label: "discussion #13", url: "https://github.com/orgs/openlint/discussions/13" }
+      - name: Backwards Compatibility
+        status: discussion
+        links: [{ label: "discussion #12", url: "https://github.com/orgs/openlint/discussions/12" }]
+      - name: Document Types
+        status: discussion
+        links: [{ label: "discussion #5", url: "https://github.com/orgs/openlint/discussions/5" }]
+      - name: Aliases
+        status: discussion
+        links: [{ label: "discussion #2", url: "https://github.com/orgs/openlint/discussions/2" }]
+      - name: Rules Testing
+        status: discussion
+        links: [{ label: "discussion #7", url: "https://github.com/orgs/openlint/discussions/7" }]
+      - name: Education
+        status: in-progress
+        links:
+          - { label: "website#12", url: "https://github.com/openlint/website/pull/12" }
+          - { label: "discussion #25", url: "https://github.com/orgs/openlint/discussions/25" }
+      - { name: Tool Conformance Suite (spec side), status: unclaimed }
+      - { name: Modular Rulesets, status: unclaimed }
+      - { name: Rules Federation, status: unclaimed }
+      - { name: Industry Rulesets, status: unclaimed }
+      - { name: Custom Functions, status: unclaimed }
+      - { name: Autofix, status: unclaimed }
+      - { name: Ratings, status: unclaimed }
+      - { name: CI/CD, status: unclaimed }
+      - { name: Overlays, status: unclaimed }
+      - { name: IDE Integration (spec side), status: unclaimed }
+      - { name: AI-Friendly Specification, status: unclaimed }
+  - name: Toolbox
+    summary: The reference implementation, editor extension and CI/CD packages.
+    items:
+      - name: Core Libraries
+        status: in-progress
+        links: [{ label: "openlint/openlint", url: "https://github.com/openlint/openlint" }]
+      - name: Remove Telemetry
+        status: in-progress
+        links: [{ label: "openlint#1", url: "https://github.com/openlint/openlint/pull/1" }]
+      - name: Supply Chain Health
+        status: in-progress
+        links: [{ label: "openlint#3", url: "https://github.com/openlint/openlint/issues/3" }]
+      - name: Docker Implementation
+        status: in-progress
+        links: [{ label: "openlint#4", url: "https://github.com/openlint/openlint/issues/4" }]
+      - name: VS Code Extension
+        status: discussion
+        links: [{ label: "discussion #9", url: "https://github.com/orgs/openlint/discussions/9" }]
+      - name: Clean Up Vendorisms and Default Ruleset
+        status: discussion
+        links: [{ label: "discussion #6", url: "https://github.com/orgs/openlint/discussions/6" }]
+      - name: Rules Builder
+        status: discussion
+        links: [{ label: "discussion #11", url: "https://github.com/orgs/openlint/discussions/11" }]
+      - { name: Modular Tooling, status: unclaimed }
+      - { name: Format Auto-Detection, status: unclaimed }
+      - { name: Replace JSON Ref Bundler, status: unclaimed }
+      - { name: CI/CD Pipeline Package, status: unclaimed }
+      - { name: Ecosystem Support, status: unclaimed }
+      - { name: Tool Conformance Suite, status: unclaimed }
+      - { name: Ruleset Documentation Generation, status: unclaimed }
+      - { name: MCP Server and API, status: unclaimed }
+      - { name: Reporting, status: unclaimed }
+      - { name: "Coverage: rule logic", status: unclaimed }
+      - { name: "Coverage: documents", status: unclaimed }
+  - name: Administration
+    summary: Governance, maintainers, home, funding and the website.
+    items:
+      - name: Governance
+        status: in-progress
+        links:
+          - { label: "community#17", url: "https://github.com/openlint/community/pull/17" }
+          - { label: "discussion #16", url: "https://github.com/orgs/openlint/discussions/16" }
+      - name: Maintainers
+        status: in-progress
+        links:
+          - { label: "community#21", url: "https://github.com/openlint/community/pull/21" }
+          - { label: "discussion #19", url: "https://github.com/orgs/openlint/discussions/19" }
+      - name: Home
+        status: in-progress
+        links:
+          - { label: "community#23", url: "https://github.com/openlint/community/issues/23" }
+          - { label: "discussion #22", url: "https://github.com/orgs/openlint/discussions/22" }
+      - name: Funding
+        status: in-progress
+        links: [{ label: "Open Collective", url: "https://opencollective.com/openlint" }]
+      - name: Website
+        status: in-progress
+        links: [{ label: "discussion #24", url: "https://github.com/orgs/openlint/discussions/24" }]
+      - name: Code of Conduct
+        status: done
+        links: [{ label: "Code of Conduct", url: "https://github.com/openlint/.github/blob/main/CODE_OF_CONDUCT.md" }]
+      - { name: Contributing Guide, status: unclaimed }
+      - { name: Licensing, status: unclaimed }
+      - { name: Trademark, status: unclaimed }
+      - { name: Use of AI, status: unclaimed }
+      - { name: Process, status: unclaimed }
