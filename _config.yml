@@ -4,6 +4,9 @@ url: https://openlint.org
 
 permalink: /blog/:year/:month/:day/:title/
 
+plugins:
+  - jekyll-redirect-from
+
 collections:
   meetings:
     output: true

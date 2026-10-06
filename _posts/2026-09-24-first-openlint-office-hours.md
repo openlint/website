@@ -4,15 +4,15 @@ title: "The first OpenLint office hours"
 author: Kin Lane
 image: /assets/blog/2026-09-24-first-office-hours.jpg
 image_alt: "Pill-shaped figures seated around a round table, with a mint-green squiggle resolving into a check mark at its center"
-summary: "We held the first office hours under the OpenLint name on 23 September, walked through the starter roadmap in its three areas, and left with a longer list and a clear place to begin."
+summary: "We held the first office hours under the OpenLint name on 24 September, walked through the starter roadmap in its three areas, and left with a longer list and a clear place to begin."
 crumbs:
   - name: blog
     url: /blog/
 ---
 
-On 23 September we held the first office hours under the OpenLint name. We've been meeting weekly since the summer, but those calls were mostly about what this project is and what to call it. This was the first one where we got to work.
+On 24 September we held the first office hours under the OpenLint name. We've been meeting weekly since the summer, but those calls were mostly about what this project is and what to call it. This was the first one where we got to work.
 
-The [agenda is on GitHub](https://github.com/openlint/community/issues/1), and the [recording, summary and full transcript](/meetings/office-hours/2026-09-23/) are here on the site.
+The [agenda is on GitHub](https://github.com/openlint/community/issues/1), and the [recording, summary and full transcript](/meetings/office-hours/2026-09-24/) are here on the site.
 
 ## A name, and a foundation
 
