@@ -46,3 +46,8 @@ ul.entries p { margin: .3rem 0 0; }
 footer { font-size: .85rem; color: var(--muted); margin-top: 3rem; }
 img.hero { display: block; width: 100%; max-width: 520px; height: auto; border-radius: 14px; margin: 0 auto 1.8rem; }
 .post h2 { margin-top: 2rem; }
+pre { background: var(--rule); padding: .9rem 1rem; border-radius: 8px; overflow-x: auto; font-size: 14px; line-height: 1.5; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+ul.links { list-style: none; padding: 0; margin: 0 0 1.2rem; }
+ul.links li { padding: .35rem 0; }
+ul.links li::before { content: "▸ "; color: var(--accent); }
