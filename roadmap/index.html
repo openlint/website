@@ -1,0 +1,23 @@
+---
+layout: default
+title: Roadmap
+summary: What OpenLint is working on, by area, updated after each office hours.
+crumbs:
+  - name: roadmap
+    url: /roadmap/
+---
+{% assign r = site.data.roadmap %}
+<h1>Roadmap</h1>
+<p class="lede">What OpenLint is working on, across the specification, the toolbox and the running of the project. Updated after each <a href="/meetings/">office hours</a>.</p>
+<p class="muted">As of {{ r.as_of | date: "%-d %B %Y" }}, from <a href="{{ r.source }}">the office hours agenda</a>. Anything <strong>unclaimed</strong> is waiting for someone to start a <a href="https://github.com/orgs/openlint/discussions">discussion</a> and pick it up. See also the <a href="/changelog/">changelog</a>.</p>
+
+{% assign order = "in-progress,discussion,done,unclaimed" | split: "," %}
+{% for area in r.areas %}
+<h2>{{ area.name }}</h2>
+<p class="muted">{{ area.summary }}</p>
+<ul class="roadmap">
+{% for st in order %}{% for item in area.items %}{% if item.status == st %}
+  <li><span class="status status-{{ item.status }}">{{ item.status | replace: "-", " " }}</span> {{ item.name }}{% if item.links %} <span class="muted">·{% for l in item.links %} <a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %},{% endunless %}{% endfor %}</span>{% endif %}</li>
+{% endif %}{% endfor %}{% endfor %}
+</ul>
+{% endfor %}

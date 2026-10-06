@@ -43,6 +43,11 @@ ul.entries p { margin: .3rem 0 0; }
 .transcript p { margin: 0 0 .9rem; }
 .transcript .ts { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; text-decoration: none; margin-right: .4rem; }
 .transcript .who { font-weight: 600; }
+ul.roadmap { list-style: none; padding: 0; margin: 0 0 1.2rem; }
+ul.roadmap li { padding: .45rem 0; border-top: 1px solid var(--rule); }
+.status { display: inline-block; min-width: 6.5rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.status-in-progress, .status-done { color: var(--accent); }
+h3 { font-size: 1rem; margin: 1.2rem 0 .4rem; }
 footer { font-size: .85rem; color: var(--muted); margin-top: 3rem; }
 img.hero { display: block; width: 100%; max-width: 520px; height: auto; border-radius: 14px; margin: 0 auto 1.8rem; }
 .post h2 { margin-top: 2rem; }
