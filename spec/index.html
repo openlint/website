@@ -1,0 +1,62 @@
+---
+layout: default
+title: Specification
+summary: The OpenLint ruleset specification and JSON Schema, the Spectral ruleset format specified on its own.
+crumbs:
+  - name: spec
+    url: /spec/
+---
+{% assign repo = "https://github.com/openlint/spec" %}
+{% assign doc = "https://github.com/openlint/spec/blob/main/SPECIFICATION.md" %}
+<h1>Specification</h1>
+<p class="lede">A specification and JSON Schema for OpenLint rulesets: the Spectral ruleset format, specified on its own, so rules can be written, validated, shared and run by any tool.</p>
+
+<p><strong>Status: draft.</strong> The document describes the format as implemented today, without extension. It isn't a formal specification yet. Everything lives in <a href="{{ repo }}">openlint/spec</a>; this page summarizes it.</p>
+
+<ul class="links">
+  <li><a href="{{ doc }}">Read the specification</a></li>
+  <li><a href="{{ repo }}/blob/main/schema/v1/ruleset.schema.json">The JSON Schema</a> (draft 2020-12)</li>
+  <li><a href="https://github.com/openlint/openlint">The reference implementation</a></li>
+</ul>
+
+<h2>What it covers</h2>
+<ul class="entries">
+  <li><a href="{{ doc }}#the-ruleset-object">The ruleset object</a>: the root fields, and the rule that a ruleset must contribute something</li>
+  <li><a href="{{ doc }}#rules">Rules</a>: <code>given</code> path expressions, <code>then</code> and the core functions, <code>severity</code>, <code>formats</code>, <code>message</code> and shorthands</li>
+  <li><a href="{{ doc }}#extends"><code>extends</code></a>, <a href="{{ doc }}#aliases"><code>aliases</code></a> and <a href="{{ doc }}#overrides"><code>overrides</code></a>: inheriting, naming path expressions, and adjusting rules per file</li>
+  <li><a href="{{ doc }}#custom-functions">Custom functions</a> and <a href="{{ doc }}#extension-properties">extension properties</a></li>
+  <li><a href="{{ doc }}#conformance-notes">Conformance notes</a>: where the format is looser than a clean design would be</li>
+  <li><a href="{{ doc }}#versioning">Versioning</a> and <a href="{{ doc }}#provenance-and-license">provenance</a></li>
+</ul>
+
+<h2>What it's for</h2>
+<p>Governing structured documents, not only OpenAPI. A rule selects nodes in a JSON or YAML document and asserts something about them, so the same format works on AsyncAPI, Arazzo, JSON Schema, CI workflows and configuration. Which document types to support is open in <a href="https://github.com/orgs/openlint/discussions/5">discussion #5</a>.</p>
+
+<h2>How the specification will be written</h2>
+<p>Proposed by Joost Farla in <a href="https://github.com/orgs/openlint/discussions/13">discussion #13</a>, and not yet agreed:</p>
+<ol>
+  <li><strong>BCP 14 keywords.</strong> MUST, SHOULD and MAY carry their RFC 2119 meaning only in capitals. Examples are informative.</li>
+  <li><strong>Defined terms.</strong> A glossary of document, ruleset, rule, match, result, linter and the rest.</li>
+  <li><strong>Exact normative references</strong>, especially for JSONPath, regular expressions, JSON Schema and YAML.</li>
+  <li><strong>One conformance target per requirement:</strong> a ruleset or a linter, never both.</li>
+  <li><strong>A permanent ID for every requirement</strong>, never reused.</li>
+  <li><strong>Conformance tests for every requirement</strong>, implemented by the conformance suite.</li>
+  <li><strong>A defined result model</strong>, based on Spectral's JSON output.</li>
+  <li><strong>Immutable releases</strong> at their own URLs on <code>spec.openlint.org</code>, with work in progress at <code>/draft/</code>.</li>
+</ol>
+<p class="muted">Open questions: conformance classes, the style of requirement IDs, and whether to publish with Respec, Bikeshed or something else.</p>
+
+<h2>Validate a ruleset</h2>
+<p>Any JSON Schema draft 2020-12 validator works:</p>
+<pre><code>npx ajv-cli validate --spec=draft2020 \
+  -s schema/v1/ruleset.schema.json \
+  -d .spectral.yaml</code></pre>
+<p>Editor setup is in <a href="{{ doc }}#using-the-schema">Using the schema</a>.</p>
+
+<h2>Get involved</h2>
+<ul class="links">
+  <li><a href="{{ repo }}/issues">Problems with the format or schema</a>. A ruleset that behaves differently from the spec is the most useful bug report.</li>
+  <li><a href="https://github.com/orgs/openlint/discussions/13">Formalizing the specification (#13)</a> · <a href="https://github.com/orgs/openlint/discussions/12">Backwards compatibility (#12)</a> · <a href="https://github.com/orgs/openlint/discussions/2">Aliases (#2)</a> · <a href="https://github.com/orgs/openlint/discussions/7">Rules testing (#7)</a></li>
+</ul>
+
+<p class="muted">The format originates in <a href="https://github.com/stoplightio/spectral">Spectral</a> by Stoplight. The specification and schema were first drafted by the OpenLint community, before it took its name, in <a href="https://github.com/api-commons/spotlight-spec">api-commons</a>. Licensed Apache-2.0.</p>
