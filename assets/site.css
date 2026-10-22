@@ -56,3 +56,6 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 ul.links { list-style: none; padding: 0; margin: 0 0 1.2rem; }
 ul.links li { padding: .35rem 0; }
 ul.links li::before { content: "▸ "; color: var(--accent); }
+ul.entries li.post-card { display: grid; grid-template-columns: 200px 1fr; gap: 1.1rem; align-items: start; }
+ul.entries li.post-card .thumb img { display: block; width: 100%; height: auto; border-radius: 10px; }
+@media (max-width: 560px) { ul.entries li.post-card { grid-template-columns: 1fr; gap: .6rem; } }
