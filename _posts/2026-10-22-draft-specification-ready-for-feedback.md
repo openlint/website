@@ -4,7 +4,7 @@ title: "The OpenLint specification draft is ready for feedback"
 author: Kin Lane
 image: /assets/blog/2026-10-22-draft-spec.jpg
 image_alt: "Pill-shaped figures reviewing a two-page document of rule bars, with a mint-green squiggle resolving into a check mark above"
-summary: "The first formal draft of the OpenLint Ruleset Specification is published at spec.openlint.org, with 94 numbered requirements, conformance tests, and 72 open questions we'd like your help with."
+summary: "The first formal draft of the OpenLint Ruleset Specification is published at spec.openlint.org, with 94 numbered requirements, conformance tests, and 36 open questions we'd like your help with."
 crumbs:
   - name: blog
     url: /blog/
@@ -26,7 +26,7 @@ Joost Farla rewrote the specification as a formal [Working Draft](https://spec.o
 
 ## Where we need help
 
-Writing the format down surfaced a lot of behavior that was never documented, only implemented. The draft marks **72 open questions** inline, right where they occur. For example, a YAML file with several documents is accepted today, but only the first one is linted. Should it be?
+Writing the format down surfaced a lot of behavior that was never documented, only implemented. The draft marks **36 open questions** inline, right where they occur. For example, a YAML file with several documents is accepted today, but only the first one is linted. Should it be?
 
 These are exactly the decisions that need more than one voice:
 
