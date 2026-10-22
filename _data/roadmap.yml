@@ -1,7 +1,7 @@
 # The OpenLint roadmap, derived from each week's office hours agenda.
 # status: done | in-progress | discussion | unclaimed
-as_of: 2026-10-08
-source: https://github.com/openlint/community/issues/26
+as_of: 2026-10-22
+source: https://github.com/openlint/community/issues/35
 areas:
   - name: Specification
     summary: The ruleset format, its normative text, and conformance.
@@ -9,7 +9,8 @@ areas:
       - name: Formal Specification
         status: in-progress
         links:
-          - { label: "spec#2", url: "https://github.com/openlint/spec/pull/2" }
+          - { label: "spec.openlint.org", url: "https://spec.openlint.org/v1/draft/" }
+          - { label: "spec#3", url: "https://github.com/openlint/spec/pull/3" }
           - { label: "discussion #13", url: "https://github.com/orgs/openlint/discussions/13" }
       - name: Backwards Compatibility
         status: discussion
@@ -24,15 +25,17 @@ areas:
         status: discussion
         links: [{ label: "discussion #7", url: "https://github.com/orgs/openlint/discussions/7" }]
       - name: Education
-        status: in-progress
+        status: done
         links:
-          - { label: "website#12", url: "https://github.com/openlint/website/pull/12" }
+          - { label: "OpenLint 101", url: "https://openlint.org/learn/" }
           - { label: "discussion #25", url: "https://github.com/orgs/openlint/discussions/25" }
       - { name: Tool Conformance Suite (spec side), status: unclaimed }
       - { name: Modular Rulesets, status: unclaimed }
       - { name: Rules Federation, status: unclaimed }
       - { name: Industry Rulesets, status: unclaimed }
-      - { name: Custom Functions, status: unclaimed }
+      - name: Custom Functions
+        status: discussion
+        links: [{ label: "discussion #28", url: "https://github.com/orgs/openlint/discussions/28" }]
       - { name: Autofix, status: unclaimed }
       - { name: Ratings, status: unclaimed }
       - { name: CI/CD, status: unclaimed }
@@ -46,13 +49,15 @@ areas:
         status: in-progress
         links: [{ label: "openlint/openlint", url: "https://github.com/openlint/openlint" }]
       - name: Remove Telemetry
-        status: in-progress
-        links: [{ label: "openlint#1", url: "https://github.com/openlint/openlint/pull/1" }]
+        status: done
+        links: [{ label: "openlint#2", url: "https://github.com/openlint/openlint/issues/2" }]
       - name: Supply Chain Health
         status: in-progress
-        links: [{ label: "openlint#3", url: "https://github.com/openlint/openlint/issues/3" }]
+        links:
+          - { label: "openlint#9 TypeScript 7", url: "https://github.com/openlint/openlint/issues/9" }
+          - { label: "openlint#17 vitest", url: "https://github.com/openlint/openlint/issues/17" }
       - name: Docker Implementation
-        status: in-progress
+        status: done
         links: [{ label: "openlint#4", url: "https://github.com/openlint/openlint/issues/4" }]
       - name: VS Code Extension
         status: discussion
@@ -69,8 +74,14 @@ areas:
       - { name: CI/CD Pipeline Package, status: unclaimed }
       - { name: Ecosystem Support, status: unclaimed }
       - { name: Tool Conformance Suite, status: unclaimed }
-      - { name: Ruleset Documentation Generation, status: unclaimed }
-      - { name: MCP Server and API, status: unclaimed }
+      - name: Ruleset Documentation Generation
+        status: in-progress
+        links: [{ label: "openlint/ruleset-documentation", url: "https://github.com/openlint/ruleset-documentation" }]
+      - name: MCP Server and API
+        status: in-progress
+        links:
+          - { label: "openlint#13", url: "https://github.com/openlint/openlint/issues/13" }
+          - { label: "discussion #32", url: "https://github.com/orgs/openlint/discussions/32" }
       - { name: Reporting, status: unclaimed }
       - { name: "Coverage: rule logic", status: unclaimed }
       - { name: "Coverage: documents", status: unclaimed }
@@ -78,14 +89,14 @@ areas:
     summary: Governance, maintainers, home, funding and the website.
     items:
       - name: Governance
-        status: in-progress
+        status: done
         links:
-          - { label: "community#17", url: "https://github.com/openlint/community/pull/17" }
+          - { label: "GOVERNANCE.md", url: "https://github.com/openlint/community/blob/main/GOVERNANCE.md" }
           - { label: "discussion #16", url: "https://github.com/orgs/openlint/discussions/16" }
       - name: Maintainers
-        status: in-progress
+        status: done
         links:
-          - { label: "community#21", url: "https://github.com/openlint/community/pull/21" }
+          - { label: "MAINTAINERS.md", url: "https://github.com/openlint/community/blob/main/MAINTAINERS.md" }
           - { label: "discussion #19", url: "https://github.com/orgs/openlint/discussions/19" }
       - name: Home
         status: in-progress
