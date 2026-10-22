@@ -59,3 +59,5 @@ ul.links li::before { content: "▸ "; color: var(--accent); }
 ul.entries li.post-card { display: grid; grid-template-columns: 200px 1fr; gap: 1.1rem; align-items: start; }
 ul.entries li.post-card .thumb img { display: block; width: 100%; height: auto; border-radius: 10px; }
 @media (max-width: 560px) { ul.entries li.post-card { grid-template-columns: 1fr; gap: .6rem; } }
+ul.entries .thumb { display: block; max-width: 200px; }
+ul.entries .thumb img { display: block; width: 100%; max-width: 200px; height: auto; border-radius: 10px; }
