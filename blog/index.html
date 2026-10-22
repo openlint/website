@@ -9,6 +9,6 @@ crumbs:
 <p class="lede">News and stories from the OpenLint community.</p>
 <ul class="entries">
 {% for post in site.posts %}
-  <li><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span><br><a href="{{ post.url }}">{{ post.title }}</a><p class="muted">{{ post.summary | default: post.excerpt | markdownify | strip_html | truncatewords: 40 }}</p></li>
+  <li class="post-card">{% if post.image %}<a href="{{ post.url }}" class="thumb"><img src="{{ post.image }}" alt="{{ post.image_alt | escape }}" loading="lazy" width="1376" height="768"></a>{% endif %}<div><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span><br><a href="{{ post.url }}">{{ post.title }}</a><p class="muted">{{ post.summary | default: post.excerpt | markdownify | strip_html | truncatewords: 40 }}</p></div></li>
 {% endfor %}
 </ul>
