@@ -1,4 +1,59 @@
 # One entry per office hours: what changed since the previous one. Newest first.
+- title: "Office Hours #4"
+  date: 2026-10-22
+  agenda: https://github.com/openlint/community/issues/35
+  done:
+    - text: "Formal specification draft merged and published at spec.openlint.org"
+      url: https://spec.openlint.org/v1/draft/
+    - text: Joost Farla added as a maintainer
+      url: https://github.com/openlint/community/pull/34
+    - text: Spectral aliases exported to ease migration
+      url: https://github.com/openlint/openlint/pull/15
+    - text: Browser tests switched from Karma to Vitest
+      url: https://github.com/openlint/openlint/pull/14
+    - text: "openlint/docs created for the documentation (21 Oct)"
+      url: https://github.com/openlint/docs
+    - text: "Office Hours #3 and #4 published"
+      url: https://openlint.org/meetings/
+    - text: "Blog: the specification draft is ready for feedback"
+      url: https://openlint.org/blog/2026/10/22/draft-specification-ready-for-feedback/
+  in_progress:
+    - text: MCP server for OpenLint
+      url: https://github.com/openlint/openlint/issues/13
+    - text: Upgrade to TypeScript 7
+      url: https://github.com/openlint/openlint/issues/9
+    - text: Replace Jest with Vitest
+      url: https://github.com/openlint/openlint/issues/17
+    - text: Markdown and agent skill validation
+      url: https://github.com/openlint/openlint/issues/11
+- title: "Office Hours #3"
+  date: 2026-10-15
+  agenda: https://github.com/openlint/community/issues/33
+  done:
+    - text: Governance adopted
+      url: https://github.com/openlint/community/blob/main/GOVERNANCE.md
+    - text: Maintainers page published
+      url: https://github.com/openlint/community/blob/main/MAINTAINERS.md
+    - text: Specification, JSON Schema and README merged
+      url: https://github.com/openlint/spec/pull/2
+    - text: Specification page and Learn section with OpenLint 101 added to the site
+      url: https://openlint.org/learn/
+    - text: Renaming continued and Node.js upgraded
+      url: https://github.com/openlint/openlint/pull/6
+    - text: "openlint/ruleset-documentation created (9 Oct)"
+      url: https://github.com/openlint/ruleset-documentation
+    - text: "Office Hours #2 published, with a blog post"
+      url: https://openlint.org/blog/
+  in_progress:
+    - text: Formal specification draft
+      url: https://github.com/openlint/spec/pull/3
+  discussions:
+    - { number: 27, title: Support for case-sensitivity }
+    - { number: 28, title: Custom functions and expression language }
+    - { number: 29, title: Backwards compatibility testing }
+    - { number: 30, title: AI-enabled code reviews }
+    - { number: 31, title: Tracing why a rule has fired }
+    - { number: 32, title: MCP server and API }
 - title: "Office Hours #2"
   date: 2026-10-08
   agenda: https://github.com/openlint/community/issues/26
