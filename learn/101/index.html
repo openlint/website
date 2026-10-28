@@ -127,11 +127,10 @@ rules:
 <p>The operation has a summary, so only the <code>operationId</code> rule reports.</p>
 
 <h2>Check your ruleset</h2>
-<p>The <a href="https://github.com/openlint/spec/blob/main/schema/v1/ruleset.schema.json">JSON Schema</a> catches mistakes in a ruleset, such as a misspelled field or a <code>given</code> that isn't a path, before you lint anything:</p>
-<pre><code>npx ajv-cli validate --spec=draft2020 -s ruleset.schema.json -d .spectral.yaml</code></pre>
+<p>The <a href="https://spec.openlint.org/v1/ruleset.schema.json">JSON Schema</a> catches mistakes in a ruleset, such as a misspelled field or a <code>given</code> that isn't a path, before you lint anything. <a href="https://spec.openlint.org/v1/draft/#schema">Using the schema</a> shows how to use it in your editor and in CI.</p>
 
 <h2>Where next</h2>
 <ul class="links">
-  <li><a href="/spec/">The specification</a>: everything in the format, including <code>overrides</code> and custom functions</li>
+  <li><a href="https://spec.openlint.org">The specification</a>: everything in the format, including <code>overrides</code> and custom functions</li>
   <li><a href="https://github.com/orgs/openlint/discussions/25">Education discussion (#25)</a>: suggest what comes after 101</li>
 </ul>
