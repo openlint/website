@@ -1,4 +1,39 @@
 # One entry per office hours: what changed since the previous one. Newest first.
+- title: "Office Hours #5"
+  date: 2026-10-29
+  agenda: https://github.com/openlint/community/issues/37
+  done:
+    - text: "OpenLint 1.0.0 released on npm as openlint, with no known breaking changes"
+      url: https://www.npmjs.com/package/openlint
+    - text: Jest replaced with Vitest
+      url: https://github.com/openlint/openlint/pull/20
+    - text: New core rulesets package for openlint:* aliases
+      url: https://github.com/openlint/openlint/pull/26
+    - text: relaxRequired now traverses "not" schemas
+      url: https://github.com/openlint/openlint/pull/19
+    - text: CLI moved to parser 1.0.0
+      url: https://github.com/openlint/openlint/pull/35
+    - text: CI documentation describes the setup as it is
+      url: https://github.com/openlint/openlint/pull/31
+    - text: docs.openlint.org live
+      url: https://docs.openlint.org/
+    - text: Site points at the published specification
+      url: https://github.com/openlint/website/pull/25
+    - text: Community README refreshed
+      url: https://github.com/openlint/community/pull/36
+    - text: "The specification's open questions filed as issues spec#7–#15"
+      url: https://github.com/openlint/spec/issues
+  in_progress:
+    - text: openlint:openapi ruleset in openlint/ruleset-openapi
+      url: https://github.com/openlint/openlint/issues/27
+    - text: TypeScript 7
+      url: https://github.com/openlint/openlint/pull/36
+    - text: Windows release tests
+      url: https://github.com/openlint/openlint/issues/32
+    - text: Link every open question in the spec draft
+      url: https://github.com/openlint/spec/pull/6
+    - text: Funding the specification and conformance suite through the Sovereign Tech Fund
+      url: https://github.com/orgs/openlint/discussions/22
 - title: "Office Hours #4"
   date: 2026-10-22
   agenda: https://github.com/openlint/community/issues/35

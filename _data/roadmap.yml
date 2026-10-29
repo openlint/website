@@ -1,7 +1,7 @@
 # The OpenLint roadmap, derived from each week's office hours agenda.
 # status: done | in-progress | discussion | unclaimed
-as_of: 2026-10-22
-source: https://github.com/openlint/community/issues/35
+as_of: 2026-10-29
+source: https://github.com/openlint/community/issues/37
 areas:
   - name: Specification
     summary: The ruleset format, its normative text, and conformance.
@@ -10,7 +10,7 @@ areas:
         status: in-progress
         links:
           - { label: "spec.openlint.org", url: "https://spec.openlint.org/v1/draft/" }
-          - { label: "spec#3", url: "https://github.com/openlint/spec/pull/3" }
+          - { label: "open questions: spec#7–#15", url: "https://github.com/openlint/spec/issues" }
           - { label: "discussion #13", url: "https://github.com/orgs/openlint/discussions/13" }
       - name: Backwards Compatibility
         status: discussion
@@ -29,7 +29,11 @@ areas:
         links:
           - { label: "OpenLint 101", url: "https://openlint.org/learn/" }
           - { label: "discussion #25", url: "https://github.com/orgs/openlint/discussions/25" }
-      - { name: Tool Conformance Suite (spec side), status: unclaimed }
+      - name: Tool Conformance Suite (spec side)
+        status: discussion
+        links:
+          - { label: "spec#7", url: "https://github.com/openlint/spec/issues/7" }
+          - { label: "funding: discussion #22", url: "https://github.com/orgs/openlint/discussions/22" }
       - { name: Modular Rulesets, status: unclaimed }
       - { name: Rules Federation, status: unclaimed }
       - { name: Industry Rulesets, status: unclaimed }
@@ -47,7 +51,9 @@ areas:
     items:
       - name: Core Libraries
         status: in-progress
-        links: [{ label: "openlint/openlint", url: "https://github.com/openlint/openlint" }]
+        links:
+          - { label: "openlint 1.0.0 on npm", url: "https://www.npmjs.com/package/openlint" }
+          - { label: "openlint/openlint", url: "https://github.com/openlint/openlint" }
       - name: Remove Telemetry
         status: done
         links: [{ label: "openlint#2", url: "https://github.com/openlint/openlint/issues/2" }]
@@ -55,7 +61,7 @@ areas:
         status: in-progress
         links:
           - { label: "openlint#9 TypeScript 7", url: "https://github.com/openlint/openlint/issues/9" }
-          - { label: "openlint#17 vitest", url: "https://github.com/openlint/openlint/issues/17" }
+          - { label: "openlint#32 Windows release tests", url: "https://github.com/openlint/openlint/issues/32" }
       - name: Docker Implementation
         status: done
         links: [{ label: "openlint#4", url: "https://github.com/openlint/openlint/issues/4" }]
@@ -63,8 +69,10 @@ areas:
         status: discussion
         links: [{ label: "discussion #9", url: "https://github.com/orgs/openlint/discussions/9" }]
       - name: Clean Up Vendorisms and Default Ruleset
-        status: discussion
-        links: [{ label: "discussion #6", url: "https://github.com/orgs/openlint/discussions/6" }]
+        status: in-progress
+        links:
+          - { label: "openlint#27 openlint:openapi", url: "https://github.com/openlint/openlint/issues/27" }
+          - { label: "discussion #6", url: "https://github.com/orgs/openlint/discussions/6" }
       - name: Rules Builder
         status: discussion
         links: [{ label: "discussion #11", url: "https://github.com/orgs/openlint/discussions/11" }]
@@ -105,7 +113,9 @@ areas:
           - { label: "discussion #22", url: "https://github.com/orgs/openlint/discussions/22" }
       - name: Funding
         status: in-progress
-        links: [{ label: "Open Collective", url: "https://opencollective.com/openlint" }]
+        links:
+          - { label: "Open Collective", url: "https://opencollective.com/openlint" }
+          - { label: "discussion #22", url: "https://github.com/orgs/openlint/discussions/22" }
       - name: Website
         status: in-progress
         links: [{ label: "discussion #24", url: "https://github.com/orgs/openlint/discussions/24" }]
