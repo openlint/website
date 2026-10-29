@@ -1,4 +1,6 @@
 title: OpenLint
+share_image: /assets/openlint-card.jpg
+share_image_alt: "The OpenLint logo, two lines of code over a wavy underline that resolves into a check mark, beside the name OpenLint and the tagline"
 description: An open specification and toolbox for linting API artifacts — a community fork of Spectral, stewarded in the open.
 url: https://openlint.org
 
