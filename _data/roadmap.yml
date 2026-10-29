@@ -27,7 +27,7 @@ areas:
       - name: Education
         status: done
         links:
-          - { label: "OpenLint 101", url: "https://openlint.org/learn/" }
+          - { label: "OpenLint 101", url: "https://learn.openlint.org/101/" }
           - { label: "discussion #25", url: "https://github.com/orgs/openlint/discussions/25" }
       - name: Tool Conformance Suite (spec side)
         status: discussion
