@@ -19,6 +19,12 @@
       url: https://github.com/openlint/website/pull/36
     - text: "Blog: Aliases, the hidden gem in OpenLint"
       url: https://github.com/openlint/website/pull/40
+    - text: "Blog: The Dutch government's developer portal now runs on OpenLint"
+      url: https://openlint.org/blog/2026/11/04/dutch-government-moves-to-openlint/
+    - text: Blog RSS feed
+      url: https://openlint.org/blog/feed.xml
+    - text: "Learn: rulesets, extends, inheritance and storage (completes the rules baseline)"
+      url: https://learn.openlint.org/rulesets/
     - text: Site license, privacy and terms pages
       url: https://github.com/openlint/website/pull/28
     - text: docs.openlint.org relative links fixed
@@ -30,8 +36,6 @@
       url: https://github.com/openlint/openlint/pull/39
     - text: "Spec PRs waiting for review: #6, #16, #17"
       url: https://github.com/openlint/spec/pulls
-    - text: Blog RSS feed
-      url: https://github.com/openlint/website/issues/41
   discussions:
     - text: "openlint#40 Rules architecture: formats, modular rulesets and standards"
       url: https://github.com/openlint/openlint/issues/40
