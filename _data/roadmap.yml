@@ -29,6 +29,7 @@ areas:
         links:
           - { label: "OpenLint 101", url: "https://learn.openlint.org/101/" }
           - { label: "learn.openlint.org", url: "https://learn.openlint.org/" }
+          - { label: "Rulesets: extends and inheritance", url: "https://learn.openlint.org/rulesets/" }
           - { label: "rules.openlint.org", url: "https://rules.openlint.org/" }
           - { label: "discussion #25", url: "https://github.com/orgs/openlint/discussions/25" }
       - name: Tool Conformance Suite (spec side)
