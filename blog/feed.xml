@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /blog/feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>{{ site.title }} Blog</title>
+  <link>{{ site.url }}/blog/</link>
+  <atom:link href="{{ site.url }}/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>News and stories from the OpenLint community.</description>
+  <language>en</language>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+  <image><url>{{ site.url }}{{ site.share_image }}</url><title>{{ site.title }} Blog</title><link>{{ site.url }}/blog/</link></image>
+{% for post in site.posts limit:20 %}  <item>
+    <title>{{ post.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ post.url }}</link>
+    <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+    {% if post.author %}<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">{{ post.author | xml_escape }}</dc:creator>{% endif %}
+    <description>{{ post.summary | default: post.excerpt | strip_html | xml_escape }}</description>
+    {% assign img = post.image | default: site.share_image %}<media:content url="{{ site.url }}{{ img }}" medium="image" type="image/jpeg" width="1376" height="768"/>
+    <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[{% if post.image %}<p><img src="{{ site.url }}{{ post.image }}" alt="{{ post.image_alt | escape }}"></p>{% endif %}{{ post.content | replace: 'src="/', 'src="https://openlint.org/' | replace: 'href="/', 'href="https://openlint.org/' }}]]></content:encoded>
+  </item>
+{% endfor %}</channel>
+</rss>
