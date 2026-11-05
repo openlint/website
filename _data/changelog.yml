@@ -1,4 +1,40 @@
 # One entry per office hours: what changed since the previous one. Newest first.
+- title: "Office Hours #6"
+  date: 2026-11-05
+  agenda: https://github.com/openlint/community/issues/38
+  done:
+    - text: "openlint 1.1.3 on npm; tags and npm back in step"
+      url: https://www.npmjs.com/package/openlint
+    - text: Built with TypeScript 7
+      url: https://github.com/openlint/openlint/pull/30
+    - text: '"No ruleset found" error lists the supported .spectral.* files'
+      url: https://github.com/openlint/openlint/pull/38
+    - text: learn.openlint.org live, with a built-in rules reference, rule snippets and aliases
+      url: https://learn.openlint.org/
+    - text: rules.openlint.org live, one page per built-in rule
+      url: https://rules.openlint.org/
+    - text: "Blog: Migrating from Spectral to OpenLint, beta testers wanted"
+      url: https://github.com/openlint/website/pull/32
+    - text: "Blog: Open Source Europe is our fiscal host"
+      url: https://github.com/openlint/website/pull/36
+    - text: "Blog: Aliases, the hidden gem in OpenLint"
+      url: https://github.com/openlint/website/pull/40
+    - text: Site license, privacy and terms pages
+      url: https://github.com/openlint/website/pull/28
+    - text: docs.openlint.org relative links fixed
+      url: https://github.com/openlint/docs/pull/3
+  in_progress:
+    - text: Language server prototype
+      url: https://github.com/openlint/language-server
+    - text: nestedResultCache option for the schema function
+      url: https://github.com/openlint/openlint/pull/39
+    - text: "Spec PRs waiting for review: #6, #16, #17"
+      url: https://github.com/openlint/spec/pulls
+    - text: Blog RSS feed
+      url: https://github.com/openlint/website/issues/41
+  discussions:
+    - text: "openlint#40 Rules architecture: formats, modular rulesets and standards"
+      url: https://github.com/openlint/openlint/issues/40
 - title: "Office Hours #5"
   date: 2026-10-29
   agenda: https://github.com/openlint/community/issues/37
