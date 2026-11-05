@@ -37,6 +37,11 @@ areas:
         links:
           - { label: "spec#7", url: "https://github.com/openlint/spec/issues/7" }
           - { label: "funding: discussion #22", url: "https://github.com/orgs/openlint/discussions/22" }
+      - name: Spectral and vacuum Compatibility
+        status: discussion
+        links:
+          - { label: "openlint#40 rules architecture", url: "https://github.com/openlint/openlint/issues/40" }
+          - { label: "Office Hours #6", url: "https://github.com/openlint/community/issues/38" }
       - name: Modular Rulesets
         status: discussion
         links: [{ label: "openlint#40 rules architecture", url: "https://github.com/openlint/openlint/issues/40" }]
@@ -95,7 +100,10 @@ areas:
       - { name: Replace JSON Ref Bundler, status: unclaimed }
       - { name: CI/CD Pipeline Package, status: unclaimed }
       - { name: Ecosystem Support, status: unclaimed }
-      - { name: Tool Conformance Suite, status: unclaimed }
+      - name: Tool Conformance Suite
+        status: discussion
+        links:
+          - { label: "OpenLint vs Spectral vs vacuum matrix: Office Hours #6", url: "https://github.com/openlint/community/issues/38" }
       - name: Ruleset Documentation Generation
         status: in-progress
         links: [{ label: "openlint/ruleset-documentation", url: "https://github.com/openlint/ruleset-documentation" }]
@@ -107,6 +115,13 @@ areas:
       - { name: Reporting, status: unclaimed }
       - { name: "Coverage: rule logic", status: unclaimed }
       - { name: "Coverage: documents", status: unclaimed }
+  - name: Performance and Housekeeping
+    summary: Speed on large documents, dependency upkeep and keeping the toolbox tidy.
+    items:
+      - name: nestedResultCache for the schema function
+        status: in-progress
+        links: [{ label: "openlint#39", url: "https://github.com/openlint/openlint/pull/39" }]
+      - { name: Benchmarks on large documents, status: unclaimed }
   - name: Administration
     summary: Governance, maintainers, home, funding and the website.
     items:
@@ -136,6 +151,7 @@ areas:
       - name: Code of Conduct
         status: done
         links: [{ label: "Code of Conduct", url: "https://github.com/openlint/.github/blob/main/CODE_OF_CONDUCT.md" }]
+      - { name: Tooling Vendor Outreach, status: unclaimed }
       - { name: Contributing Guide, status: unclaimed }
       - { name: Licensing, status: unclaimed }
       - { name: Trademark, status: unclaimed }

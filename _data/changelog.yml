@@ -39,6 +39,8 @@
   discussions:
     - text: "openlint#40 Rules architecture: formats, modular rulesets and standards"
       url: https://github.com/openlint/openlint/issues/40
+    - text: "Priority: compatibility and a conformance suite (OpenLint, Spectral, vacuum) before new formats"
+      url: https://github.com/openlint/community/issues/38
 - title: "Office Hours #5"
   date: 2026-10-29
   agenda: https://github.com/openlint/community/issues/37
