@@ -1,7 +1,7 @@
 # The OpenLint roadmap, derived from each week's office hours agenda.
 # status: done | in-progress | discussion | unclaimed
-as_of: 2026-11-05
-source: https://github.com/openlint/community/issues/38
+as_of: 2026-11-12
+source: https://github.com/openlint/community/issues/40
 areas:
   - name: Specification
     summary: The ruleset format, its normative text, and conformance.
@@ -40,6 +40,7 @@ areas:
       - name: Spectral and vacuum Compatibility
         status: discussion
         links:
+          - { label: "discussion #39 next spec version", url: "https://github.com/orgs/openlint/discussions/39" }
           - { label: "openlint#40 rules architecture", url: "https://github.com/openlint/openlint/issues/40" }
           - { label: "Office Hours #6", url: "https://github.com/openlint/community/issues/38" }
       - name: Modular Rulesets
@@ -86,6 +87,7 @@ areas:
       - name: Clean Up Vendorisms and Default Ruleset
         status: in-progress
         links:
+          - { label: "openlint#42 rulesets as packages", url: "https://github.com/openlint/openlint/pull/42" }
           - { label: "openlint#27 openlint:openapi", url: "https://github.com/openlint/openlint/issues/27" }
           - { label: "discussion #6", url: "https://github.com/orgs/openlint/discussions/6" }
       - name: Rules Builder
@@ -105,6 +107,7 @@ areas:
         links:
           - { label: "conformance.openlint.org", url: "https://conformance.openlint.org/" }
           - { label: "openlint/conformance", url: "https://github.com/openlint/conformance" }
+          - { label: "findings: conformance#1", url: "https://github.com/openlint/conformance/issues/1" }
       - name: Ruleset Documentation Generation
         status: in-progress
         links: [{ label: "openlint/ruleset-documentation", url: "https://github.com/openlint/ruleset-documentation" }]
