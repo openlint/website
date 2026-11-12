@@ -1,4 +1,38 @@
 # One entry per office hours: what changed since the previous one. Newest first.
+- title: "Office Hours #7"
+  date: 2026-11-12
+  agenda: https://github.com/openlint/community/issues/40
+  done:
+    - text: "conformance.openlint.org live: the spec's 240 conformance tests, run daily against six linters"
+      url: https://conformance.openlint.org/
+    - text: "Spec: open questions linked to discussions and issues; three contradictions fixed; normative text moved into requirements"
+      url: https://github.com/openlint/spec/pull/17
+    - text: "Spec CI: Spectral baseline locked after spectral-core 1.24.1 changed alias validation"
+      url: https://github.com/openlint/spec/pull/20
+    - text: API Commons naming ruleset on rules.openlint.org
+      url: https://github.com/openlint/rules/pull/2
+    - text: "Blog: Europe's governments are already writing API rulesets. Separately."
+      url: https://github.com/openlint/website/pull/49
+    - text: "Blog: Europe's next generation of geodata APIs speaks OpenAPI"
+      url: https://github.com/openlint/website/pull/50
+    - text: "Blog: The governance layer Europe's API standards are missing"
+      url: https://github.com/openlint/website/pull/51
+    - text: Office Hours #6 recording, summary and transcript
+      url: https://openlint.org/meetings/office-hours/2026-11-05/
+  in_progress:
+    - text: "Rulesets split into packages: frozen spectral:*, evolving openlint:*"
+      url: https://github.com/openlint/openlint/pull/42
+    - text: nestedResultCache option for the schema function
+      url: https://github.com/openlint/openlint/pull/39
+    - text: Next release considerations
+      url: https://github.com/openlint/openlint/issues/41
+    - text: MCP server, in its own repo
+      url: https://github.com/openlint/openlint/issues/13
+  discussions:
+    - text: "Discussion #39: the next version of the spec"
+      url: https://github.com/orgs/openlint/discussions/39
+    - text: "Conformance findings across six linters"
+      url: https://github.com/openlint/conformance/issues/1
 - title: "Office Hours #6"
   date: 2026-11-05
   agenda: https://github.com/openlint/community/issues/38
