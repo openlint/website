@@ -7,7 +7,15 @@ crumbs:
     url: /changelog/
 ---
 <h1>Changelog</h1>
-<p class="lede">What changed between each <a href="/meetings/">office hours</a>, newest first. See the <a href="/roadmap/">roadmap</a> for what's next.</p>
+<p class="lede">Toolbox releases, then what changed between each <a href="/meetings/">office hours</a>, newest first. See the <a href="/roadmap/">roadmap</a> for what's next.</p>
+
+<h2 id="toolbox-releases">Toolbox releases</h2>
+<p class="muted">Each <a href="https://www.npmjs.com/package/openlint">openlint</a> release, newest first. Details in <a href="https://github.com/openlint/openlint/releases">GitHub Releases</a> and the <a href="https://docs.openlint.org/reference/changelog">docs</a>.</p>
+<ul>{% for r in site.data.releases %}
+<li><a href="{{ r.url }}"><strong>{{ r.version }}</strong></a> <span class="muted">· {{ r.date | date: "%-d %B %Y" }}</span><br>{{ r.summary }}{% if r.changes %} <span class="muted">({% for c in r.changes %}<a href="{{ c.url }}">{{ c.text }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %})</span>{% endif %}</li>{% endfor %}
+</ul>
+
+<h2 id="weekly">Week by week</h2>
 
 {% for e in site.data.changelog %}
 <h2>{{ e.title }} <span class="muted">· {{ e.date | date: "%-d %B %Y" }}</span></h2>
