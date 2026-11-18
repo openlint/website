@@ -30,9 +30,13 @@
     --muted: #5f5f5a;
     --accent: #0b6e4f;
     --rule: #e4e4df;
+  --card: #f1f1ec;
+    --line: #d6d6cf;
   }
   @media (prefers-color-scheme: dark) {
     :root {
+      --card: #2a2a27;
+      --line: #3d3d39;
       --bg: #131312;
       --ink: #ecece7;
       --muted: #a3a39c;
@@ -64,6 +68,22 @@
   ul.links { list-style: none; padding: 0; margin: 0 0 1.2rem; }
   ul.links li { padding: .35rem 0; }
   ul.links li::before { content: "▸ "; color: var(--accent); }
+  figure.organized { margin: 2.4rem 0 0; }
+  figure.organized h2 { font-size: 1.3rem; margin: 0 0 .3rem; }
+  figure.organized figcaption { font-size: .9rem; color: var(--muted); margin-bottom: 1rem; }
+  svg.org { width: 100%; height: auto; display: block; font-family: inherit; }
+  svg.org .h { fill: var(--muted); font-size: 11.5px; font-weight: 700; letter-spacing: .08em; }
+  svg.org .t { fill: var(--ink); font-size: 14px; font-weight: 600; }
+  svg.org .s { fill: var(--muted); font-size: 12px; }
+  svg.org .m { fill: var(--accent); font-size: 12px; font-weight: 600; }
+  svg.org .c { fill: var(--card); stroke: var(--line); stroke-width: 1; }
+  svg.org .p { stroke-dasharray: 5 4; stroke: var(--muted); }
+  svg.org .ok { stroke: var(--accent); stroke-width: 1.6; }
+  svg.org .b { fill: none; stroke: var(--line); stroke-width: 1.5; }
+  svg.org .ln { stroke: var(--accent); stroke-width: 2; fill: none; }
+  svg.org .ah { fill: var(--accent); }
+  svg.org a:hover .c, svg.org a:focus .c { stroke: var(--accent); stroke-width: 2; }
+  svg.org a:focus { outline: none; }
   footer { font-size: .85rem; color: var(--muted); }
 </style>
 <link rel="alternate" type="application/rss+xml" title="OpenLint Blog" href="https://openlint.org/blog/feed.xml">
@@ -78,6 +98,63 @@
   <p>The name was chosen by <a href="https://github.com/api-commons/spotlight-spec/issues/39">open community vote</a>, concluding September&nbsp;2026. The effort names three things that no longer have to share a fate with any one company: a <strong>specification</strong> a ruleset can conform to, the <strong>tooling</strong> that applies it — a linter as a library, a CLI, a CI gate, an IDE integration — and the <strong>community</strong> that carries both.</p>
 
   <p>Everything, from the spec to the tools and the governance, happens in public on <a href="https://github.com/openlint">GitHub</a>. See the <a href="/roadmap/">roadmap</a> for what is being worked on, and what is waiting for someone to pick it up.</p>
+
+  <figure class="organized">
+    <h2>How OpenLint is organized</h2>
+    <figcaption>Every box links to its repository or site. Dashed boxes are proposed in <a href="https://github.com/openlint/community/issues/41">community#41</a> and not yet agreed.</figcaption>
+<svg class="org" viewBox="0 0 640 1116" role="img" aria-labelledby="org-title">
+<title id="org-title">How OpenLint is organized: people, the specification, the core toolbox, add-ons, rulesets, sites, and how changes land. Each box links to its repository or site.</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker></defs>
+<text x="0" y="14" class="h">PEOPLE</text>
+<a href="https://github.com/openlint/community/issues/41"><rect x="0" y="24" width="314" height="56" rx="8" class="c"/><text x="12" y="45" class="t">Administrator</text><text x="12" y="63" class="s">Kin Lane · org, website, community</text></a>
+<a href="https://github.com/openlint/openlint"><rect x="326" y="24" width="314" height="56" rx="8" class="c"/><text x="338" y="45" class="t">Toolbox lead</text><text x="338" y="63" class="s">Phil Sturgeon · openlint/openlint</text></a>
+<a href="https://github.com/openlint/spec"><rect x="0" y="88" width="314" height="56" rx="8" class="c"/><text x="12" y="109" class="t">Specification lead</text><text x="12" y="127" class="s">Joost Farla · openlint/spec</text></a>
+<a href="https://github.com/openlint/mcp"><rect x="326" y="88" width="314" height="56" rx="8" class="c"/><text x="338" y="109" class="t">Tool leads</text><text x="338" y="127" class="s">one per add-on · Miguel Quintero, MCP</text></a>
+<text x="0" y="166" class="s">Every role gets a named backup · 90 days silent = marked unmaintained</text>
+<text x="0" y="204" class="h">SPECIFICATION</text>
+<text x="340" y="204" class="h">CORE · RELEASED TOGETHER</text>
+<rect x="0" y="214" width="300" height="196" rx="12" class="b"/><rect x="340" y="214" width="300" height="196" rx="12" class="b"/>
+<a href="https://spec.openlint.org"><rect x="12" y="226" width="132" height="56" rx="8" class="c"/><text x="24" y="247" class="t">v1</text><text x="24" y="265" class="s">from Spectral</text></a>
+<a href="https://github.com/orgs/openlint/discussions/39"><rect x="156" y="226" width="132" height="56" rx="8" class="c p"/><text x="168" y="247" class="t">v2 draft</text><text x="168" y="265" class="s">breaking changes</text></a>
+<a href="https://github.com/openlint/spec/tree/main/v1/conformance"><rect x="12" y="292" width="276" height="106" rx="8" class="c ok"/><text x="24" y="313" class="t">Conformance tests</text><text x="24" y="331" class="s">v1/conformance · 240 tests</text><text x="24" y="347" class="s">one shared runner (spec#23)</text></a>
+<text x="24" y="380" class="m">source of truth</text>
+<a href="https://github.com/openlint/openlint"><rect x="352" y="226" width="276" height="56" rx="8" class="c"/><text x="364" y="247" class="t">CLI · core · parsers</text><text x="364" y="265" class="s">npm: openlint, @openlint/*</text></a>
+<a href="https://github.com/openlint/openlint/tree/main/packages"><rect x="352" y="292" width="276" height="50" rx="8" class="c"/><text x="364" y="313" class="t">functions · formats</text><text x="364" y="331" class="s">implement the spec</text></a>
+<a href="/changelog/"><rect x="352" y="350" width="276" height="48" rx="8" class="c"/><text x="364" y="371" class="t">Releases + changelog</text><text x="364" y="389" class="s">GitHub Releases · openlint.org/changelog</text></a>
+<path d="M340,262 L306,262" class="ln" marker-end="url(#ar)"/><text x="306" y="252" class="m" font-size="10.5">impl.</text>
+<text x="0" y="448" class="h">ADD-ONS · OWN REPO + LEAD (PROPOSED)</text>
+<a href="https://github.com/openlint/mcp"><rect x="0" y="458" width="204" height="56" rx="8" class="c p"/><text x="12" y="479" class="t">MCP server</text><text x="12" y="497" class="s">openlint/mcp</text></a>
+<a href="https://github.com/openlint/language-server"><rect x="218" y="458" width="204" height="56" rx="8" class="c p"/><text x="230" y="479" class="t">Language server</text><text x="230" y="497" class="s">openlint/language-server</text></a>
+<a href="https://github.com/ivangsa/openlint-vscode"><rect x="436" y="458" width="204" height="56" rx="8" class="c p"/><text x="448" y="479" class="t">VS Code extension</text><text x="448" y="497" class="s">ivangsa/openlint-vscode</text></a>
+<text x="0" y="552" class="h">RULESETS · ONE REPO EACH</text>
+<rect x="0" y="562" width="440" height="214" rx="12" class="b"/>
+<text x="12" y="584" class="m">openlint:* · evolve</text><text x="226" y="584" class="m">spectral:* · frozen at 1.0</text>
+<a href="https://github.com/openlint/ruleset-openapi"><rect x="12" y="594" width="202" height="38" rx="8" class="c"/><text x="24" y="615" class="t">ruleset-openapi</text></a>
+<a href="https://github.com/openlint/ruleset-asyncapi"><rect x="12" y="638" width="202" height="38" rx="8" class="c"/><text x="24" y="659" class="t">ruleset-asyncapi</text></a>
+<a href="https://github.com/openlint/ruleset-arazzo"><rect x="12" y="682" width="202" height="38" rx="8" class="c"/><text x="24" y="703" class="t">ruleset-arazzo</text></a>
+<a href="https://github.com/openlint/ruleset-documentation"><rect x="12" y="726" width="202" height="38" rx="8" class="c"/><text x="24" y="747" class="t">ruleset-documentation</text></a>
+<a href="https://github.com/openlint/ruleset-spectral-oas"><rect x="226" y="594" width="202" height="38" rx="8" class="c"/><text x="238" y="615" class="t">ruleset-spectral-oas</text></a>
+<a href="https://github.com/openlint/ruleset-spectral-asyncapi"><rect x="226" y="638" width="202" height="38" rx="8" class="c"/><text x="238" y="659" class="t">ruleset-spectral-asyncapi</text></a>
+<a href="https://github.com/openlint/ruleset-spectral-arazzo"><rect x="226" y="682" width="202" height="38" rx="8" class="c"/><text x="238" y="703" class="t">ruleset-spectral-arazzo</text></a>
+<path d="M440,669 L486,669" class="ln" marker-end="url(#ar)"/>
+<a href="https://rules.openlint.org"><rect x="489" y="622" width="149" height="94" rx="8" class="c ok"/><text x="502" y="643" class="t">rules.openlint.org</text><text x="502" y="661" class="s">every rule,</text><text x="502" y="677" class="s">one page each</text></a>
+<text x="0" y="814" class="h">GENERATED SITES + COMMUNITY</text>
+<a href="https://conformance.openlint.org"><rect x="0" y="824" width="314" height="56" rx="8" class="c"/><text x="12" y="845" class="t">conformance.openlint.org</text><text x="12" y="863" class="s">spec tests × community tools, daily</text></a>
+<a href="https://learn.openlint.org"><rect x="326" y="824" width="314" height="56" rx="8" class="c"/><text x="338" y="845" class="t">learn.openlint.org</text><text x="338" y="863" class="s">guides and education</text></a>
+<a href="/"><rect x="0" y="888" width="314" height="56" rx="8" class="c"/><text x="12" y="909" class="t">openlint.org</text><text x="12" y="927" class="s">website · blog · meetings · roadmap</text></a>
+<a href="https://docs.openlint.org"><rect x="326" y="888" width="314" height="56" rx="8" class="c"/><text x="338" y="909" class="t">docs.openlint.org</text><text x="338" y="927" class="s">toolbox documentation</text></a>
+<text x="0" y="982" class="h">HOW CHANGES LAND</text>
+<a href="https://github.com/orgs/openlint/discussions"><rect x="0" y="992" width="148" height="56" rx="8" class="c"/><text x="12" y="1013" class="t">Discussions</text><text x="12" y="1031" class="s">ideas, questions</text></a>
+<path d="M149,1020 L162,1020" class="ln" marker-end="url(#ar)"/>
+<a href="https://github.com/issues?q=org%3Aopenlint+is%3Aopen+is%3Aissue"><rect x="164" y="992" width="148" height="56" rx="8" class="c"/><text x="176" y="1013" class="t">Issues</text><text x="176" y="1031" class="s">agreed work, labelled</text></a>
+<path d="M313,1020 L326,1020" class="ln" marker-end="url(#ar)"/>
+<a href="https://github.com/pulls?q=org%3Aopenlint+is%3Aopen+is%3Apr"><rect x="328" y="992" width="148" height="56" rx="8" class="c"/><text x="340" y="1013" class="t">Pull requests</text><text x="340" y="1031" class="s">1 approval · CI green</text></a>
+<path d="M477,1020 L490,1020" class="ln" marker-end="url(#ar)"/>
+<a href="https://github.com/openlint/openlint/releases"><rect x="492" y="992" width="148" height="56" rx="8" class="c"/><text x="504" y="1013" class="t">Releases</text><text x="504" y="1031" class="s">leads + backups only</text></a>
+<a href="https://github.com/openlint/community/issues/41"><rect x="0" y="1058" width="314" height="56" rx="8" class="c p"/><text x="12" y="1079" class="t">Org owners</text><text x="12" y="1097" class="s">administrator + one more, never one</text></a>
+<a href="https://github.com/openlint/community/issues/41"><rect x="326" y="1058" width="314" height="56" rx="8" class="c p"/><text x="338" y="1079" class="t">New repo or subdomain?</text><text x="338" y="1097" class="s">own lead → repo · generated → subdomain</text></a>
+</svg>
+  </figure>
 
   <hr>
 
