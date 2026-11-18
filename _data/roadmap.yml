@@ -67,7 +67,8 @@ areas:
       - name: Core Libraries
         status: in-progress
         links:
-          - { label: "openlint 1.1.3 on npm", url: "https://www.npmjs.com/package/openlint" }
+          - { label: "openlint 1.3.0 on npm", url: "https://www.npmjs.com/package/openlint" }
+          - { label: "releases", url: "https://github.com/openlint/openlint/releases" }
           - { label: "openlint/openlint", url: "https://github.com/openlint/openlint" }
       - name: Remove Telemetry
         status: done
@@ -87,7 +88,8 @@ areas:
       - name: Clean Up Vendorisms and Default Ruleset
         status: in-progress
         links:
-          - { label: "openlint#42 rulesets as packages", url: "https://github.com/openlint/openlint/pull/42" }
+          - { label: "openlint#42 rulesets as packages (1.2.0)", url: "https://github.com/openlint/openlint/pull/42" }
+          - { label: "openlint#44 spectral:* pinned at 1.0.0 (1.3.0)", url: "https://github.com/openlint/openlint/pull/44" }
           - { label: "openlint#27 openlint:openapi", url: "https://github.com/openlint/openlint/issues/27" }
           - { label: "discussion #6", url: "https://github.com/orgs/openlint/discussions/6" }
       - name: Rules Builder
@@ -99,7 +101,9 @@ areas:
         links:
           - { label: "openlint#40 rules architecture", url: "https://github.com/openlint/openlint/issues/40" }
           - { label: "discussion #5", url: "https://github.com/orgs/openlint/discussions/5" }
-      - { name: Replace JSON Ref Bundler, status: unclaimed }
+      - name: Replace JSON Ref Bundler
+        status: discussion
+        links: [{ label: "openlint#45 json-schema-ref-parser deprecated", url: "https://github.com/openlint/openlint/issues/45" }]
       - { name: CI/CD Pipeline Package, status: unclaimed }
       - { name: Ecosystem Support, status: unclaimed }
       - name: Tool Conformance Suite
@@ -108,12 +112,16 @@ areas:
           - { label: "conformance.openlint.org", url: "https://conformance.openlint.org/" }
           - { label: "openlint/conformance", url: "https://github.com/openlint/conformance" }
           - { label: "findings: conformance#1", url: "https://github.com/openlint/conformance/issues/1" }
+          - { label: "one shared runner: spec#23", url: "https://github.com/openlint/spec/issues/23" }
+          - { label: "testing unimplemented behaviour: discussion #45", url: "https://github.com/orgs/openlint/discussions/45" }
       - name: Ruleset Documentation Generation
         status: in-progress
         links: [{ label: "openlint/ruleset-documentation", url: "https://github.com/openlint/ruleset-documentation" }]
       - name: MCP Server and API
         status: in-progress
         links:
+          - { label: "openlint/mcp", url: "https://github.com/openlint/mcp" }
+          - { label: "@openlint/openlint-mcp on npm", url: "https://www.npmjs.com/package/@openlint/openlint-mcp" }
           - { label: "openlint#13", url: "https://github.com/openlint/openlint/issues/13" }
           - { label: "discussion #32", url: "https://github.com/orgs/openlint/discussions/32" }
       - { name: Reporting, status: unclaimed }
@@ -123,7 +131,7 @@ areas:
     summary: Speed on large documents, dependency upkeep and keeping the toolbox tidy.
     items:
       - name: nestedResultCache for the schema function
-        status: in-progress
+        status: done
         links: [{ label: "openlint#39", url: "https://github.com/openlint/openlint/pull/39" }]
       - { name: Benchmarks on large documents, status: unclaimed }
   - name: Administration

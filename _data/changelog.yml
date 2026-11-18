@@ -1,4 +1,31 @@
 # One entry per office hours: what changed since the previous one. Newest first.
+- title: "Office Hours #8"
+  date: 2026-11-19
+  agenda: https://github.com/openlint/community/issues/46
+  done:
+    - text: "openlint 1.2.0: rulesets split into packages; opt-in schema cache"
+      url: https://github.com/openlint/openlint/releases/tag/openlint@1.2.0
+    - text: "openlint 1.3.0: spectral:* rulesets pinned at 1.0.0"
+      url: https://github.com/openlint/openlint/releases/tag/openlint@1.3.0
+    - text: "MCP server released: @openlint/openlint-mcp, now at openlint/mcp"
+      url: https://github.com/openlint/mcp
+    - text: Toolbox releases on the changelog page
+      url: https://openlint.org/changelog/#toolbox-releases
+    - text: Changelog page in the docs
+      url: https://github.com/openlint/openlint/pull/43
+    - text: Office Hours #7 recording, summary and transcript
+      url: https://openlint.org/meetings/office-hours/2026-11-12/
+  in_progress:
+    - text: "Proposal: how the project is organized (community#41)"
+      url: https://github.com/openlint/community/issues/41
+    - text: "One conformance runner for the spec CI and the dashboard (spec#23)"
+      url: https://github.com/openlint/spec/issues/23
+    - text: "Spec: how alphabetical compares; no cycles through extends (spec#24–#27)"
+      url: https://github.com/openlint/spec/pulls
+    - text: "openlint:* rulesets to 1.0.0 and semver"
+      url: https://github.com/openlint/openlint/pull/42
+  discussions:
+    - { number: 45, title: "How do we test behavior the linters don't have yet?" }
 - title: "Office Hours #7"
   date: 2026-11-12
   agenda: https://github.com/openlint/community/issues/40

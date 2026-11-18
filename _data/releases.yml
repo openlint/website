@@ -1,5 +1,12 @@
 # One entry per openlint CLI release, newest first. Checked weekly, before office hours.
 # Each entry links the GitHub Release, which sums up every package in the release.
+- version: "1.3.0"
+  date: 2026-11-17
+  url: https://github.com/openlint/openlint/releases/tag/openlint@1.3.0
+  summary: "The spectral:* compatibility rulesets (spectral:oas, spectral:asyncapi, spectral:arazzo) pinned at 1.0.0, so they can't change underneath you."
+  changes:
+    - text: Pin spectral legacy rulesets to 1.0.0
+      url: https://github.com/openlint/openlint/pull/44
 - version: "1.2.0"
   date: 2026-11-12
   url: https://github.com/openlint/openlint/releases/tag/openlint@1.2.0
