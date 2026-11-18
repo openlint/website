@@ -82,6 +82,9 @@
   svg.org .b { fill: none; stroke: var(--line); stroke-width: 1.5; }
   svg.org .ln { stroke: var(--accent); stroke-width: 2; fill: none; }
   svg.org .ah { fill: var(--accent); }
+  svg.org .npm { fill: #cb3837; }
+  svg.org .nt { fill: #fff; font-size: 10px; font-weight: 700; }
+  svg.org a:hover .npm { fill: #a52b2a; }
   svg.org a:hover .c, svg.org a:focus .c { stroke: var(--accent); stroke-width: 2; }
   svg.org a:focus { outline: none; }
   footer { font-size: .85rem; color: var(--muted); }
@@ -101,7 +104,7 @@
 
   <figure class="organized">
     <h2>How OpenLint is organized</h2>
-    <figcaption>Every box links to its repository or site. Dashed boxes are proposed in <a href="https://github.com/openlint/community/issues/41">community#41</a> and not yet agreed.</figcaption>
+    <figcaption>Every box links to its repository or site, and each npm badge to its package (repos are named ruleset-openapi and so on). Dashed boxes are proposed in <a href="https://github.com/openlint/community/issues/41">community#41</a> and not yet agreed.</figcaption>
 <svg class="org" viewBox="0 0 640 1116" role="img" aria-labelledby="org-title">
 <title id="org-title">How OpenLint is organized: people, the specification, the core toolbox, add-ons, rulesets, sites, and how changes land. Each box links to its repository or site.</title>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker></defs>
@@ -119,25 +122,35 @@
 <a href="https://github.com/openlint/spec/tree/main/v1/conformance"><rect x="12" y="292" width="276" height="106" rx="8" class="c ok"/><text x="24" y="313" class="t">Conformance tests</text><text x="24" y="331" class="s">v1/conformance · 240 tests</text><text x="24" y="347" class="s">one shared runner (spec#23)</text></a>
 <text x="24" y="380" class="m">source of truth</text>
 <a href="https://github.com/openlint/openlint"><rect x="352" y="226" width="276" height="56" rx="8" class="c"/><text x="364" y="247" class="t">CLI · core · parsers</text><text x="364" y="265" class="s">npm: openlint, @openlint/*</text></a>
+<a href="https://www.npmjs.com/package/openlint"><title>openlint on npm</title><rect x="590" y="234" width="30" height="14" rx="2" class="npm"/><text x="605" y="244.5" class="nt" text-anchor="middle">npm</text></a>
 <a href="https://github.com/openlint/openlint/tree/main/packages"><rect x="352" y="292" width="276" height="50" rx="8" class="c"/><text x="364" y="313" class="t">functions · formats</text><text x="364" y="331" class="s">implement the spec</text></a>
+<a href="https://www.npmjs.com/package/@openlint/openlint-functions"><title>@openlint/openlint-functions on npm</title><rect x="590" y="300" width="30" height="14" rx="2" class="npm"/><text x="605" y="310.5" class="nt" text-anchor="middle">npm</text></a>
 <a href="/changelog/"><rect x="352" y="350" width="276" height="48" rx="8" class="c"/><text x="364" y="371" class="t">Releases + changelog</text><text x="364" y="389" class="s">GitHub Releases · openlint.org/changelog</text></a>
 <path d="M340,262 L306,262" class="ln" marker-end="url(#ar)"/><text x="306" y="252" class="m" font-size="10.5">impl.</text>
 <text x="0" y="448" class="h">ADD-ONS · OWN REPO + LEAD (PROPOSED)</text>
 <a href="https://github.com/openlint/mcp"><rect x="0" y="458" width="204" height="56" rx="8" class="c p"/><text x="12" y="479" class="t">MCP server</text><text x="12" y="497" class="s">openlint/mcp</text></a>
+<a href="https://www.npmjs.com/package/@openlint/openlint-mcp"><title>@openlint/openlint-mcp on npm</title><rect x="166" y="466" width="30" height="14" rx="2" class="npm"/><text x="181" y="476.5" class="nt" text-anchor="middle">npm</text></a>
 <a href="https://github.com/openlint/language-server"><rect x="218" y="458" width="204" height="56" rx="8" class="c p"/><text x="230" y="479" class="t">Language server</text><text x="230" y="497" class="s">openlint/language-server</text></a>
 <a href="https://github.com/ivangsa/openlint-vscode"><rect x="436" y="458" width="204" height="56" rx="8" class="c p"/><text x="448" y="479" class="t">VS Code extension</text><text x="448" y="497" class="s">ivangsa/openlint-vscode</text></a>
 <text x="0" y="552" class="h">RULESETS · ONE REPO EACH</text>
 <rect x="0" y="562" width="440" height="214" rx="12" class="b"/>
 <text x="12" y="584" class="m">openlint:* · evolve</text><text x="226" y="584" class="m">spectral:* · frozen at 1.0</text>
-<a href="https://github.com/openlint/ruleset-openapi"><rect x="12" y="594" width="202" height="38" rx="8" class="c"/><text x="24" y="615" class="t">ruleset-openapi</text></a>
-<a href="https://github.com/openlint/ruleset-asyncapi"><rect x="12" y="638" width="202" height="38" rx="8" class="c"/><text x="24" y="659" class="t">ruleset-asyncapi</text></a>
-<a href="https://github.com/openlint/ruleset-arazzo"><rect x="12" y="682" width="202" height="38" rx="8" class="c"/><text x="24" y="703" class="t">ruleset-arazzo</text></a>
-<a href="https://github.com/openlint/ruleset-documentation"><rect x="12" y="726" width="202" height="38" rx="8" class="c"/><text x="24" y="747" class="t">ruleset-documentation</text></a>
-<a href="https://github.com/openlint/ruleset-spectral-oas"><rect x="226" y="594" width="202" height="38" rx="8" class="c"/><text x="238" y="615" class="t">ruleset-spectral-oas</text></a>
-<a href="https://github.com/openlint/ruleset-spectral-asyncapi"><rect x="226" y="638" width="202" height="38" rx="8" class="c"/><text x="238" y="659" class="t">ruleset-spectral-asyncapi</text></a>
-<a href="https://github.com/openlint/ruleset-spectral-arazzo"><rect x="226" y="682" width="202" height="38" rx="8" class="c"/><text x="238" y="703" class="t">ruleset-spectral-arazzo</text></a>
+<a href="https://github.com/openlint/ruleset-openapi"><rect x="12" y="594" width="202" height="38" rx="8" class="c"/><text x="24" y="615" class="t">openapi</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-openapi"><title>@openlint/ruleset-openapi on npm</title><rect x="176" y="602" width="30" height="14" rx="2" class="npm"/><text x="191" y="612.5" class="nt" text-anchor="middle">npm</text></a>
+<a href="https://github.com/openlint/ruleset-asyncapi"><rect x="12" y="638" width="202" height="38" rx="8" class="c"/><text x="24" y="659" class="t">asyncapi</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-asyncapi"><title>@openlint/ruleset-asyncapi on npm</title><rect x="176" y="646" width="30" height="14" rx="2" class="npm"/><text x="191" y="656.5" class="nt" text-anchor="middle">npm</text></a>
+<a href="https://github.com/openlint/ruleset-arazzo"><rect x="12" y="682" width="202" height="38" rx="8" class="c"/><text x="24" y="703" class="t">arazzo</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-arazzo"><title>@openlint/ruleset-arazzo on npm</title><rect x="176" y="690" width="30" height="14" rx="2" class="npm"/><text x="191" y="700.5" class="nt" text-anchor="middle">npm</text></a>
+<a href="https://github.com/openlint/ruleset-documentation"><rect x="12" y="726" width="202" height="38" rx="8" class="c"/><text x="24" y="747" class="t">documentation</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-documentation"><title>@openlint/ruleset-documentation on npm</title><rect x="176" y="734" width="30" height="14" rx="2" class="npm"/><text x="191" y="744.5" class="nt" text-anchor="middle">npm</text></a>
+<a href="https://github.com/openlint/ruleset-spectral-oas"><rect x="226" y="594" width="202" height="38" rx="8" class="c"/><text x="238" y="615" class="t">spectral-oas</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-spectral-oas"><title>@openlint/ruleset-spectral-oas on npm</title><rect x="390" y="602" width="30" height="14" rx="2" class="npm"/><text x="405" y="612.5" class="nt" text-anchor="middle">npm</text></a>
+<a href="https://github.com/openlint/ruleset-spectral-asyncapi"><rect x="226" y="638" width="202" height="38" rx="8" class="c"/><text x="238" y="659" class="t">spectral-asyncapi</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-spectral-asyncapi"><title>@openlint/ruleset-spectral-asyncapi on npm</title><rect x="390" y="646" width="30" height="14" rx="2" class="npm"/><text x="405" y="656.5" class="nt" text-anchor="middle">npm</text></a>
+<a href="https://github.com/openlint/ruleset-spectral-arazzo"><rect x="226" y="682" width="202" height="38" rx="8" class="c"/><text x="238" y="703" class="t">spectral-arazzo</text></a>
+<a href="https://www.npmjs.com/package/@openlint/ruleset-spectral-arazzo"><title>@openlint/ruleset-spectral-arazzo on npm</title><rect x="390" y="690" width="30" height="14" rx="2" class="npm"/><text x="405" y="700.5" class="nt" text-anchor="middle">npm</text></a>
 <path d="M440,669 L486,669" class="ln" marker-end="url(#ar)"/>
-<a href="https://rules.openlint.org"><rect x="489" y="622" width="149" height="94" rx="8" class="c ok"/><text x="502" y="643" class="t">rules.openlint.org</text><text x="502" y="661" class="s">every rule,</text><text x="502" y="677" class="s">one page each</text></a>
+<a href="https://rules.openlint.org"><rect x="489" y="622" width="149" height="94" rx="8" class="c ok"/><text x="501" y="643" class="t">rules.openlint.org</text><text x="501" y="661" class="s">every rule,</text><text x="501" y="677" class="s">one page each</text></a>
 <text x="0" y="814" class="h">GENERATED SITES + COMMUNITY</text>
 <a href="https://conformance.openlint.org"><rect x="0" y="824" width="314" height="56" rx="8" class="c"/><text x="12" y="845" class="t">conformance.openlint.org</text><text x="12" y="863" class="s">spec tests × community tools, daily</text></a>
 <a href="https://learn.openlint.org"><rect x="326" y="824" width="314" height="56" rx="8" class="c"/><text x="338" y="845" class="t">learn.openlint.org</text><text x="338" y="863" class="s">guides and education</text></a>
