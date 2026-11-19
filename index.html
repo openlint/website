@@ -1,3 +1,6 @@
+---
+# Versions at the top come from _data/releases.yml (first entry), updated in the weekly PR.
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +56,9 @@
     padding: 0 20px;
   }
   main { max-width: 640px; margin: 0 auto; padding: 9vh 0 6vh; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dim { color: var(--muted); }
+  .mark a:hover { text-decoration: underline; }
   .mark {
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     font-size: 15px;
@@ -93,7 +99,8 @@
 </head>
 <body>
 <main>
-  <div class="mark">$ openlint --version<br>0.0.0-hello-world</div>
+  {%- assign cli = site.data.releases | first -%}
+  <div class="mark">$ openlint --version<br><a href="{{ cli.url }}">{{ cli.version }}</a><br><br><span class="dim"># specification</span><br><a href="https://spec.openlint.org/v1/draft/">1.x working draft</a></div>
   <h1>OpenLint</h1>
 
   <p class="lede">An open specification and toolbox for linting API artifacts — rulesets, conformance, and governance for OpenAPI and the formats around it. A community fork of Spectral, developed and stewarded in the open.</p>
